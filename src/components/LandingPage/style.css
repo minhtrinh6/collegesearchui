@@ -1,0 +1,25 @@
+.landing-page-container {
+  background-color: #add8e6;
+}
+.content-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.filterMenu-container {
+  display: block;
+  width: 33%;
+  height: auto;
+  margin-left: 35px;
+}
+.cardtable-container {
+  display: block;
+  width: 66%;
+  overflow-y: scroll;
+  height: 100vh;
+}
+.searchbar-container {
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+}

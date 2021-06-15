@@ -1,0 +1,11 @@
+.header {
+  padding: 0px 0px 10px 0px;
+  text-align: left;
+  background: white;
+  color: black;
+  font-size: 15px;
+  width: 100vw;
+}
+.title, .tagline {
+  padding-left: 20px;
+}
