@@ -4,8 +4,7 @@ import './style.css';
 function Header() {
 	return (
 		<div className="header">
-			<h1 className="title">University Search</h1>
-			<p className="tagline">E pluribus, Uni</p>
+			<h1 className="title">School Search</h1>
 		</div>
 	);
 }

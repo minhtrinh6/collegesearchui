@@ -3,6 +3,7 @@ import CheckBox from '../CheckBox';
 import './style.css';
 
 function FilterMenu(props) {
+  const{content, filter, handleFilters} = props;
 	const [isChecked, setIsChecked] = useState([]);
 	const handleToggle = (element) => {
 		const currIndex = isChecked.indexOf(element);
@@ -14,16 +15,16 @@ function FilterMenu(props) {
 			newChecked.splice(currIndex, 1);
 		}
 		setIsChecked(newChecked);
-		props.handleFilters(newChecked);
+		handleFilters(newChecked);
 	};
 	const filterOptions = () => {
 		const checkboxArray = [];
-		props.content.forEach((element) => {
+		content.forEach((element) => {
 			checkboxArray.push(
 				<div className="checkbox-row">
 					<CheckBox
 						key={element}
-						filter={props.filter}
+						filter={filter}
 						element={element}
 						handleToggle={handleToggle}
 						isChecked={isChecked}
